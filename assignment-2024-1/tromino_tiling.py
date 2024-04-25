@@ -1,4 +1,5 @@
-
+import sys
+n = sys.argv
 def tromino(n):
     matrix = [["X"] * 2**n for _ in range(2**n)]
     if n == 1:
