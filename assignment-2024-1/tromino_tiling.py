@@ -1,5 +1,5 @@
 import sys
-n = sys.argv
+n = int(sys.argv[1])
 def tromino(n):
     matrix = [["X"] * 2**n for _ in range(2**n)]
     if n == 1:
@@ -60,5 +60,4 @@ def tromino(n):
     for row in matrix:
         print(row)
         
-tromino(3)
-
+tromino(n)
